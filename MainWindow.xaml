@@ -17,7 +17,7 @@
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="28,300,0,0" TextWrapping="Wrap" Text="文字說明" VerticalAlignment="Top" Width="79" FontSize="18"/>
         <TextBox x:Name="txtMg" HorizontalAlignment="Left" Height="24" Margin="28,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" KeyUp="txtMg_KeyUp"/>
         <TextBox x:Name="txtG" HorizontalAlignment="Left" Height="24" Margin="132,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" KeyUp="txtG_KeyUp"/>
-        <TextBox x:Name="txtKg" HorizontalAlignment="Left" Height="24" Margin="249,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
+        <TextBox x:Name="txtKg" HorizontalAlignment="Left" Height="24" Margin="249,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" KeyUp="txtKg_KeyUp"/>
         <TextBox x:Name="txtT" HorizontalAlignment="Left" Height="24" Margin="28,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
         <TextBox x:Name="txtOz" HorizontalAlignment="Left" Height="24" Margin="142,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
         <TextBox x:Name="txtIb" HorizontalAlignment="Left" Height="24" Margin="249,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79"/>
