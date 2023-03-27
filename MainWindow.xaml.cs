@@ -131,5 +131,15 @@ namespace Weight_converter
                 txtIb.Text = "";
             }
         }
+
+        private void btnAllClear_Click(object sender, RoutedEventArgs e)
+        {
+            txtMg.Text = "";
+            txtG.Text = "";
+            txtKg.Text = "";
+            txtT.Text = "";
+            txtOz.Text = "";
+            txtIb.Text = "";
+        }
     }
 }
