@@ -86,5 +86,20 @@ namespace Weight_converter
                 txtKg.Text = "";
             }
         }
+
+        private void txtT_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txtT.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                caculateAnswer(3, douOutput * 1000000000);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtT.Text = "";
+            }
+        }
     }
 }
