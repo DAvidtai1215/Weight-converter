@@ -31,7 +31,7 @@ namespace Weight_converter
             if (_kind != 0)
                 txtMg.Text = string.Format("{0:0.##########}", _value);
             if (_kind != 1)
-                txtg.Text = string.Format("{0:0.##########}", _value / 1000);
+                txtG.Text = string.Format("{0:0.##########}", _value / 1000);
             if (_kind != 2)
                 txtKg.Text = string.Format("{0:0.##########}", _value / 1000000);
             if (_kind != 3)
@@ -40,6 +40,36 @@ namespace Weight_converter
                 txtOz.Text = string.Format("{0:0.##########}", _value / 28349.523125);
             if (_kind != 5)
                 txtIb.Text = string.Format("{0:0.##########}", _value / 453592.37);
+        }
+
+        private void txtMg_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txtMg.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                caculateAnswer(0, douOutput);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtMg.Text = "";
+            }
+        }
+
+        private void txtG_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txtG.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                caculateAnswer(1, douOutput * 1000);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtG.Text = "";
+            }
         }
     }
 }
