@@ -20,9 +20,26 @@ namespace Weight_converter
     /// </summary>
     public partial class MainWindow : Window
     {
+        string strInput; // 字串型態的strInput變數
+        double douOutput;
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void caculateAnswer(int _kind, double _value)
+        {
+            if (_kind != 0)
+                txtMg.Text = string.Format("{0:0.##########}", _value);
+            if (_kind != 1)
+                txtg.Text = string.Format("{0:0.##########}", _value / 1000);
+            if (_kind != 2)
+                txtKg.Text = string.Format("{0:0.##########}", _value / 1000000);
+            if (_kind != 3)
+                txtT.Text = string.Format("{0:0.##########}", _value / 1000000000);
+            if (_kind != 4)
+                txtOz.Text = string.Format("{0:0.##########}", _value / 28349.523125);
+            if (_kind != 5)
+                txtIb.Text = string.Format("{0:0.##########}", _value / 453592.37);
         }
     }
 }
