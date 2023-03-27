@@ -116,5 +116,20 @@ namespace Weight_converter
                 txtOz.Text = "";
             }
         }
+
+        private void txtIb_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txtIb.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                caculateAnswer(5, douOutput * 453592.37);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtIb.Text = "";
+            }
+        }
     }
 }
